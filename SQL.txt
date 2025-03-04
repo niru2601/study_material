@@ -20,5 +20,24 @@ SQL Questions :
 	NON CLUSTER INDEX - it will not sort or change the physcial structure of data.
 	table can have more than 2 non cluster index.
 	
+5) date functions : 
+
+6) Joins : Inner join, outer join, left join, right join, self join
+
+7) Normalization - to remove duplicate records and redundancy 
+	1NF - all records with unique value
+	2NF - 1NF and should have single column primary key 
+	3NF - 2NF AND must not have any transition functional dependancy 
+	BCNF - if many candidate key present and then make sure that only one candidate key present per table.
+
+8) drop , delete and truncate
+	drop - can not roll back
+	truncate - can not roll back
+	delete - can be roll back before commiting 
 	
+9) ACID - atomicity - either successfull or fail. if any transaction fails then all transactions will fail and it will not reflect on database.
+	consistancy - ensure that data must be have all validation rules.
+	isolation - it is nothing but concurrency control.
+	durability - once transacition gets commited, it must be reflect in db in all scenarions like powercut, crash or any error occures .
+
 	
