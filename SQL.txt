@@ -1,0 +1,24 @@
+SQL Questions : 
+
+1) DQL(DATA QUERY), DDL(DATA DEFINITION), DML(DATA MANUPULATION), TCL(TRANSITION CONTROL), DCL(DATA CONTROL)
+
+2) 	DQL - SELECT 
+	DDL - CREATE, TRUNCATE, DROP, ALTER
+	DML - INSERT, UPDATE, DELETE
+	TCL - COMMIT, SAVEPOINT, ROLLBACK
+	DCL - GRANT, REVOKE
+	
+3) PRIMARY KEY, FOREIGN KEY, UNIQUE KEY
+
+4) UNIQUE, CLUSTER AND NON CLUSTER INDEX - 
+	UNIQUE INDEX - PRIMARY KEY OF A TABLE IS UNIQUE INDEX
+	
+	CLUSTER INDEX - TO CREATE CLUSTER INDEX, YOU NEED TO REMOVE PRIMARY KEY FIRST.
+	When a clustered index is created on a column, SQL Server reorders the data in the table based on that index.
+	TABLE CAN HAVE ONLY ONE CLUSTER INDEX.
+	
+	NON CLUSTER INDEX - it will not sort or change the physcial structure of data.
+	table can have more than 2 non cluster index.
+	
+	
+	
