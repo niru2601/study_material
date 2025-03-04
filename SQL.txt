@@ -38,6 +38,29 @@ SQL Questions :
 9) ACID - atomicity - either successfull or fail. if any transaction fails then all transactions will fail and it will not reflect on database.
 	consistancy - ensure that data must be have all validation rules.
 	isolation - it is nothing but concurrency control.
-	durability - once transacition gets commited, it must be reflect in db in all scenarions like powercut, crash or any error occures .
+	durability - once transacition gets commited, it must be reflect in db in all scenarions like powercut, crash or any error occures.
 
+10) Trigger - it is a special type of stored procedure
+	DDL Trigger : 
+		CREATE TRIGGER prevent_table_creation
+		ON DATABASE
+		FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+		AS 
+		BEGIN
+			PRINT 'you can not create, drop and alter table in this database';
+			ROLLBACK;
+		END;
+		
+	DML Trigger : 
+		before insert, after insert, before update, after update, before delete, after delete	
+		
+		CREATE TRIGGER validate_grade
+		BEFORE INSERT ON student_grades
+		FOR EACH ROW
+		BEGIN
+			IF :new.grade < 0 OR :new.grade > 100 THEN
+				RAISE_APPLICATION_ERROR(-20001, 'Invalid grade value.');
+			END IF;
+		END;
+	
 	
