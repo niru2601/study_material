@@ -4,6 +4,23 @@ yield - The yield keyword is used to return a list of values from a function.
 
 decorators - In Python, decorators are a powerful and flexible way to modify or extend the behavior of functions or methods,
 			without changing their actual code
+			
+			# A simple decorator function	
+			def decorator(func):
+  
+				def wrapper():
+				print("Before calling the function.")
+				func()
+				print("After calling the function.")
+			return wrapper
+
+			# Applying the decorator to a function
+			@decorator
+
+			def greet():
+			print("Hello, World!")
+
+			greet()
 
   
 constructor - 
@@ -70,7 +87,8 @@ reseved keyword : total 36
 		
 		
 lambda - 
-
+	a = [1, 2, 3, 4]
+	b = map(lambda x: x * 2, a)
 
 regex - 
 
