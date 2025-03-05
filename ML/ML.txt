@@ -1,0 +1,20 @@
+Types : Supervised, unsupervised, semisupervised, reinforcement
+
+	1) Supervised learning - it is depend on output column
+								a) Regression - If output column is number then it is regression 
+								b) Classification - If output column is category then it is classification
+								
+	2) Unsupervised learning - No output column is present
+								a) clustering - clusters will get formed on input column 
+								b) dimensionality reduction - columns may get reduced and form a single column 
+								c) Anamoly detection - detecting error/defects 
+								d) Associate rule based learning - genrate association between each other
+								
+	3) Semisupervised learning - 	it is combination of supervised and unsupervised learning.
+									need to label first few data and it will label other by its own
+									e.g. google photots - google will ask you to label any photo and 
+									google will do the labeling to all other photos having same face
+								
+								
+	4) Reinforcement learning - it does not have any data. it will learn from its actions.
+	
