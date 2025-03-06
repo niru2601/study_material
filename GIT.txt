@@ -23,7 +23,7 @@
  ----------- git remote set-url origin "https://github.com/newbko2d/django.git" : chnage repository path 
 
 
-12) git remote -v : to check url added or not 
+12) git remote -v : to check the url added or not 
 
 13) git add . : '.' inidcates add file > git add used to add files form working to stagging area
 
